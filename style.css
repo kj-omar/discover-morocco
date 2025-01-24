@@ -1,0 +1,185 @@
+/* Importation des polices Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #c1272d; /* Moroccan Red */
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #c1272d;
+}
+
+.btn-primary {
+    background-color: #c1272d;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #008000; /* Moroccan Green */
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background-image: url('images/culture.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-secondary {
+    background-color: #008000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #c1272d;
+}
+
+/* Content Section */
+.content-section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    color: #c1272d;
+    margin-bottom: 1rem;
+}
+
+.content-section p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.content-section .btn-secondary {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Highlights Section */
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.highlight {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.highlight img {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.highlight h3 {
+    color: #008000;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlights {
+        flex-direction: column;
+    }
+}
